@@ -37,6 +37,14 @@
       {% include code_copy.html %}
     {%- endif -%}
 
+    {%- if site.theme_config.show_footnote_tooltips and page.layout == "post" -%}
+      {% include footnotes.html %}
+    {%- endif -%}
+
+    {%- if site.theme_config.show_link_previews and page.layout == "post" -%}
+      {% include link_preview.html %}
+    {%- endif -%}
+
     {%- if site.theme_config.show_back_to_top and page.layout == "post" -%}
       {% include back_to_top.html %}
     {%- endif -%}

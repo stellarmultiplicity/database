@@ -14,7 +14,9 @@ layout: default
   {% include toc.html %}
 {%- endif -%}
 
-{{ content }}
+<div class="post-content{% if page.dropcap %} has-dropcap{% endif %}">
+  {{ content }}
+</div>
 
 {%- if site.theme_config.show_post_nav -%}
   {% include post_nav.html %}

@@ -66,6 +66,9 @@ footer_entries:
   - title: feed
     url: feed.xml
 
+  - title: llms.txt
+    url: llms.txt
+
 misc_entries:
   - title: this is an example vertical list
     url: false

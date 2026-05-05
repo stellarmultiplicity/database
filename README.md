@@ -9,6 +9,15 @@
 
 ## Features
 * Light & dark mode with theme switcher (respects `prefers-reduced-motion`)
+* Typeset in [Geist](https://vercel.com/font) (body & headings) and [Geist Mono](https://vercel.com/font) (code)
+* [Agent-friendly out of the box](#agent-friendly-by-default) - per-page `.md` siblings, `/llms.txt`, and `/llms-full.txt`
+* Built-in client-side search over post titles, tags, and excerpts
+* Hover-preview cards on internal post links (opt-in)
+* Footnote tooltips - read footnotes inline without scrolling (opt-in)
+* Smooth page transitions via the View Transitions API in supporting browsers
+* Drop-cap on the first paragraph of a post (opt-in via `dropcap: true`)
+* Tag cloud with frequency-weighted sizing on the tag archive
+* Personality 404 with random-post link
 * Vertical list, horizontal list, card list
 * Landing page with navbar, footer, portfolio
 * Fast (very minimal CSS) - 100/100 on performance, accessibility, best practices and SEO, please see [Lighthouse Report](https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/lighthouse-report.png) for more details
@@ -16,14 +25,15 @@
 * SEO optimized with auto-generated sitemap
 * RSS feed (uses [Jekyll Feed](https://github.com/jekyll/jekyll-feed))
 * [GitHub Markdown Alerts](#github-markdown-alerts) (NOTE, TIP, IMPORTANT, WARNING, CAUTION)
+* Polished `<details>` collapsibles for asides and "long version" expansions
 * Tag archive page with clickable tags
-* Light and dark mode syntax highlighting
+* Light and dark mode syntax highlighting with language label on each code block
 * Accessible - ARIA labels, keyboard friendly
 * Reading progress bar (opt-in)
 * Back-to-top button (opt-in)
 * Previous/next post navigation (opt-in)
 * Table of contents via `toc: true` front matter (opt-in)
-* Code block copy button (opt-in)
+* Code block copy button with language label (opt-in)
 * Easy to extend
 * Fully compatible with [GitHub Pages](https://pages.github.com/) (see [GitHub Pages installation](#github-pages-installation))
 * Auto-generated share images for social media (using [Soopr](https://www.soopr.co))
@@ -94,16 +104,17 @@ The `home.yml` file accepts the following fields:
   - home - for landing page
   you can change your `index.md` file to use either home or blog layout.
 
-2. It is extremely easy to tweak the color scheme. 
+2. It is extremely easy to tweak the color scheme.
   - for light mode, customize these css variables
 ```css
 html {
-    --bg: #fff;
-    --bg-secondary: #f3f4f6;
-    --headings: #1e293b;
-    --text: #374151;
-    --text-secondary: #6b7280;
-    --links: #6366f1;
+    --bg: #fcfcfc;
+    --bg-secondary: #f1f2f4;
+    --bg-subtle: #f6f7f8;
+    --headings: #0f172a;
+    --text: #2b2f36;
+    --text-secondary: #5b6470;
+    --links: #4f46e5;
     --highlight: #ffecb2; // light yellow
     --code-text: #9d174d;
 }
@@ -112,20 +123,79 @@ html {
 ```css
 @mixin dark-appearance {
   html, body  {
-      --headings: #74c0fc;
+      --headings: #e6edf3;
       --links: #91a7ff;
       --highlight: #41c7c7;
-      --bg: #1f242a;
-      --bg-secondary: #323945;
-      --text: #adb5bd;
-      --text-secondary: #9ca3af;
+      --bg: #15161d;
+      --bg-secondary: #23242f;
+      --bg-subtle: #1c1d26;
+      --text: #c4ccd6;
+      --text-secondary: #8b94a3;
       --code-text: #91a7ff;
   };
 }
 ```
-3. Sign up for free on [Soopr](https://www.soopr.co) and add your `publish_token` in `_config.yml` file - with this, each page gets short URL, like button and auto generated share image for social media.
+
+3. Want different fonts? Moonwalk uses Geist / Geist Mono via two CSS variables. Override them in your own SCSS:
+```css
+:root {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+```
+Don't forget to update the `<link>` to Google Fonts in `_includes/head.html` to match.
+
+### Optional features
+
+Each of these is wired up in `_config.yml` under `theme_config`:
+
+- `show_footnote_tooltips: true` - when readers hover a kramdown footnote ref (`[^1]`), the footnote text appears in a small tooltip instead of forcing a scroll to the bottom.
+- `show_link_previews: true` - hover any internal post link to see a preview card with title, excerpt, and date. Powered by an auto-generated `/search.json` index.
+
+To add **client-side search** anywhere on your site, drop `{% raw %}{% include search.html %}{% endraw %}` into a layout or page. It searches over titles, tags, and excerpts using the same `/search.json`.
+
+To enable a **drop-cap** on a post's opening paragraph, add `dropcap: true` to the post's front matter.
+
+To use the **`<details>` collapsible** style, just write native HTML in your Markdown:
+
+```html
+<details>
+  <summary>Long version</summary>
+  Hidden by default, expanded on click.
+</details>
+```
 
 <img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/twitter_card.png" />
+
+### Agent-friendly by default
+
+LLM crawlers and coding agents read your site too. Moonwalk ships with two small Jekyll plugins so they can fetch clean Markdown instead of parsing HTML:
+
+- **[jekyll-markdown-output](https://github.com/abhinavs/jekyll-markdown-output)** - emits a `.md` sibling for every post. A page rendered at `/foo` also exists as `/foo.md` with a small frontmatter block and the source Markdown. No layouts, no nav chrome, no theme toggles - just the content.
+- **[jekyll-llms-output](https://github.com/abhinavs/jekyll-llms-output)** - generates `/llms.txt` (a curated index) and `/llms-full.txt` (full content concatenated) following the [llmstxt.org](https://llmstxt.org) spec, so agents can discover and ingest your site in one fetch.
+
+Both are wired up in `_config.yml` with sensible defaults:
+
+```yaml
+plugins:
+  - jekyll-markdown-output
+  - jekyll-llms-output
+
+markdown_output:
+  collections: [posts]
+
+llms_output:
+  index:
+    collections: [posts]
+  full:
+    collections: [posts]
+    respect_markdown_output: true
+```
+
+Set `enabled: false` on either block to turn it off. For curated `llms.txt` content, drop a `_data/llms.yml` file with `title`, `description`, and `sections` - the plugin will use it instead of auto-generating. See each plugin's README for full configuration.
+
+> [!NOTE]
+> GitHub Pages restricts plugins to a [whitelist](https://pages.github.com/versions/), and these two are not on it. If you host on GH Pages, build the site yourself in CI (Actions, Netlify, Cloudflare Pages, Vercel) or remove the plugins.
 
 ### GitHub Markdown Alerts
 
