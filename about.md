@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Moonwalk
+title: Stellar multiplicity database
 ---
 
 Moonwalk is a fast, minimal Jekyll theme built for people who want their writing to look great without fighting their tools.
