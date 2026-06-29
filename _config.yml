@@ -3,7 +3,7 @@ author: Ayush Moharana
 url: https://stellarmultiplicity.github.io # root address of the site
 baseurl: "/database/" # set to "/moonwalk" if hosting under a project subpath
 description: > # description of the site (multiple lines allowed)
-  Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
+  A database of catalogues and codes to help stellar multiplicity studies.
 
 permalink: /:slug
 
@@ -34,10 +34,8 @@ theme_config:
   show_link_previews: true # show preview cards when hovering internal post links
   # options for "home" page
   home:
-    title_projects: Portfolio
-    title_misc_list: Details
-    title_blog: Blog
-    title_old_projects: Old Projects
+    title_projects: Catalogues
+    title_projects: Softwares
 
 soopr:
   publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
