@@ -2,31 +2,29 @@ navbar_entries:
   - title: about
     url: about
 
-  - title: blog
+  - title: news
     url: blog
 
-  - title: website
-    url: https://www.abhinav.co
 
 project_entries:
-  - title: Project 1
+  - title: MSC
     url: overview-post
     desc: This is an example project, configured in _data/home.yml
 
-  - title: Project 2
+  - title: WDC
     url: overview-post
     desc: Projects are shown in card layout
 
-  - title: Project 3
+  - title: SB9
     url: overview-post
     desc: You can control visibility from _config.yml file
 
-  - title: Project 4
+  - title: DEBCat
     url: overview-post
     desc: This project uses highlight markup, configured in _data/home.yml
     highlight: WIP
 
-  - title: Project 5
+  - title: CREME
     url: overview-post
     desc: Moonwalk also has horizontal list (used in header and footer)
     highlight: WIP
