@@ -35,8 +35,7 @@ theme_config:
   # options for "home" page
   home:
     title_projects: Catalogues
-    title_projects: Softwares
-
+    title_old_projects: Softwares
 soopr:
   publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
