@@ -37,8 +37,7 @@ old_project_entries:
   - title: PHOBE2
     url: https://www.soopr.co
     desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: spec
-    highlight: phot
+    highlight: spec, phot
 
   - title: Cookie
     url: https://github.com/abhinavs/cookie
