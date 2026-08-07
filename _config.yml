@@ -3,16 +3,14 @@ author: Ayush Moharana
 url: https://stellarmultiplicity.github.io # root address of the site
 baseurl: "/database/" # set to "/moonwalk" if hosting under a project subpath
 description: > # description of the site (multiple lines allowed)
-  A database of catalogues and codes to help stellar multiplicity studies. Recommend additon of  new catalogues using this [link](https://docs.google.com/forms/d/e/1FAIpQLSdMt5y9z_DRWPzon3l3Wrj0soYca7BFRrzPzYcB49CkxwDMaw/viewform?usp=publish-editor).
-  Recommend additon of new codes and softwares using this [link](https://docs.google.com/forms/d/e/1FAIpQLSfBs6lKDt0HgkXhBkNX5P9IW5pLDDQzcY1F9gPeH7mFxbPieA/viewform?usp=publish-editor)
-
+  A database of catalogues and codes to help stellar multiplicity studies. 
 permalink: /:slug
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description
