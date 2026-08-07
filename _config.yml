@@ -3,7 +3,8 @@ author: Ayush Moharana
 url: https://stellarmultiplicity.github.io # root address of the site
 baseurl: "/database/" # set to "/moonwalk" if hosting under a project subpath
 description: > # description of the site (multiple lines allowed)
-  A database of catalogues and codes to help stellar multiplicity studies.
+  A database of catalogues and codes to help stellar multiplicity studies. Recommend additon of  new catalogues using this [link](https://docs.google.com/forms/d/e/1FAIpQLSdMt5y9z_DRWPzon3l3Wrj0soYca7BFRrzPzYcB49CkxwDMaw/viewform?usp=publish-editor).
+  Recommend additon of new codes and softwares using this [link](https://docs.google.com/forms/d/e/1FAIpQLSfBs6lKDt0HgkXhBkNX5P9IW5pLDDQzcY1F9gPeH7mFxbPieA/viewform?usp=publish-editor)
 
 permalink: /:slug
 
