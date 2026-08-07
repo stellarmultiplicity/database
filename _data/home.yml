@@ -30,7 +30,11 @@ project_entries:
 
   - title: KeplerEB
     url: https://keplerebs.villanova.edu/
-    desc: Kepler Eclipsing Binaries catalog.
+    desc: Kepler Eclipsing Binaries Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Kepler mission.
+
+  - title: TESSEB
+    url: https://keplerebs.villanova.edu/
+    desc: The TESS Eclipsing Binary Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Transiting Exoplanet Survey Satellite mission.
 
 old_project_entries:
   - title: PHOEBE2
@@ -53,6 +57,28 @@ old_project_entries:
   - title: REBOUNDx
     url: https://reboundx.readthedocs.io/en/latest/
     desc: REBOUNDx (eXtras) allows you to easily incorporate additional physics into your REBOUND N-body integrations.
+
+
+  - title: jaxoplanet
+    url: https://jax.exoplanet.codes/en/latest/
+    desc: jaxoplanet is a functional-programming-forward implementation of lightcurves, RVs, and relative astrometry of multi-exoplanet and star systems.
+
+  - title: orbitize!
+    url: https://orbitize.readthedocs.io/en/latest/
+    desc: Python package for fitting orbits of directly imaged mulit-planet and star systems.
+
+  - title: Octofitter
+    url: https://sefffal.github.io/Octofitter.jl/stable/
+    desc: Octofitter is a Julia package for performing Bayesian inference against a wide variety of exoplanet / binary star data. 
+
+  - title: orvara
+    url: https://github.com/t-brandt/orvara
+    desc: A package for fitting orbits of bright stars and their faint companions (exoplanets, brown dwarfs, white dwarfs, and low-mass stars).
+
+  - title: ALLESFITTER
+    url: https://www.allesfitter.com/
+    desc: Allesfitter is a public and user-friendly astronomy software package for modeling photometric and RV data. It can accommodate multiple exoplanets, multi-star systems, star spots, stellar flares, and various noise models. 
+
 
 footer_entries:
   - title: github
