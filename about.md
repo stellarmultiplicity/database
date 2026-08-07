@@ -3,7 +3,7 @@ layout: post
 title: Stellar multiplicity database
 ---
 
-The Stellar Multiplicity database is a community run database for catalgues and codes related to the science of binary and multiple stars. This was born out of the discussions at the Stellar multiplicity session at CoolStars23, Tokyo. 
+The Stellar Multiplicity database is a community run database for catalgues and codes related to the science of binary and multiple stars. This was born out of the discussions at the [Stellar multiplicity session](https://stellarmultiplicity.github.io/cs23/) at CoolStars23, Tokyo. 
 
 ## How to add catalogues and codes to the database?
 
