@@ -12,60 +12,52 @@ project_entries:
     desc: This is a catalog of hierarchical multiple stellar systems with three or more components. 
 
   - title: WDC
-    url: overview-post
-    desc: Projects are shown in card layout
+    url: https://www.astro.gsu.edu/wds/
+    desc: The Washington Double Star Catalog (WDS) maintained by the United States Naval Observatory is the world's principal database of astrometric double and multiple star information.
 
   - title: SB9
-    url: overview-post
-    desc: You can control visibility from _config.yml file
+    url: https://heasarc.gsfc.nasa.gov/w3browse/all/sborbitcat.html
+    desc: The Ninth Catalog of Spectroscopic Binary Orbits (SB9) continues the series of compilations of spectroscopic orbits carried out over the past 35 years by Batten and collaborators.
 
   - title: DEBCat
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+    url: https://www.astro.keele.ac.uk/jkt/debcat/
+    desc: DEBCat is a catalogue of the physical properties of well-studied detached eclipsing binaries. 
+    highlight: High-precision
 
-  - title: CREME
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
+  - title: PMTCat
+    url: https://binary-observations.github.io/post_mt_catalog/
+    desc: A collaborative project to catalog and analyze post-mass transfer binary systems.
 
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  - title: KeplerEB
+    url: https://keplerebs.villanova.edu/
+    desc: Kepler Eclipsing Binaries catalog.
 
 old_project_entries:
-  - title: PHOBE2
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: spec, phot
+  - title: PHOEBE2
+    url: https://phoebe-project.org/
+    desc: PHOEBE is an eclipsing binary modeling code that uses meshes to model stellar surfaces.
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
+  - title: JKTEBOP
+    url: https://www.astro.keele.ac.uk/jkt/codes/jktebop.html
+    desc: The code models the projection of each star as a sphere for calculating eclipse shapes and as a biaxial ellipsoid for calculating proximity effects.
 
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
+  - title: RadVel
+    url: https://radvel.readthedocs.io/en/latest/
+    desc: RadVel is an open-source Python package for modeling Keplerian orbits in radial velocity (RV) timeseries.
 
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
+  - title: REBOUND
+    url: https://rebound.hanno-rein.de/
+    desc: REBOUND is an N-body integrator, i.e. a software package that can integrate the motion of particles under the influence of gravity. 
+
+
+  - title: REBOUNDx
+    url: https://reboundx.readthedocs.io/en/latest/
+    desc: REBOUNDx (eXtras) allows you to easily incorporate additional physics into your REBOUND N-body integrations.
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
-
-  - title: twitter
-    url: https://twitter.com/abhinav
-
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/stellarmultiplicity
 
-  - title: feed
-    url: feed.xml
-
-  - title: llms.txt
-    url: llms.txt
 
 misc_entries:
   - title: this is an example vertical list
