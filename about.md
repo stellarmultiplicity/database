@@ -10,3 +10,6 @@ The Stellar Multiplicity database is a community run database for catalgues and 
 Recommend additon of  new catalogues using this [link](https://docs.google.com/forms/d/e/1FAIpQLSdMt5y9z_DRWPzon3l3Wrj0soYca7BFRrzPzYcB49CkxwDMaw/viewform?usp=publish-editor).
 Recommend additon of new codes and softwares using this [link](https://docs.google.com/forms/d/e/1FAIpQLSfBs6lKDt0HgkXhBkNX5P9IW5pLDDQzcY1F9gPeH7mFxbPieA/viewform?usp=publish-editor).
 
+## Contact Us
+
+If you have anys question, suggestions, or comments, e-mail us at: [stellarmultiplicity@gmail.com](stellarmultiplicity@gmail.com).
