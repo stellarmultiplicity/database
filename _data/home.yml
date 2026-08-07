@@ -37,6 +37,8 @@ project_entries:
     desc: The TESS Eclipsing Binary Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Transiting Exoplanet Survey Satellite mission.
 
 old_project_entries:
+
+#primary function: lightcurve model
   - title: PHOEBE2
     url: https://phoebe-project.org/
     desc: PHOEBE is an eclipsing binary modeling code that uses meshes to model stellar surfaces.
@@ -45,18 +47,18 @@ old_project_entries:
     url: https://www.astro.keele.ac.uk/jkt/codes/jktebop.html
     desc: The code models the projection of each star as a sphere for calculating eclipse shapes and as a biaxial ellipsoid for calculating proximity effects.
 
+
+  - title: ALLESFITTER
+    url: https://www.allesfitter.com/
+    desc: Allesfitter is a public and user-friendly astronomy software package for modeling photometric and RV data. It can accommodate multiple exoplanets, multi-star systems, star spots, stellar flares, and various noise models. 
+
+
+
+
+#primary function: orbit model
   - title: RadVel
     url: https://radvel.readthedocs.io/en/latest/
     desc: RadVel is an open-source Python package for modeling Keplerian orbits in radial velocity (RV) timeseries.
-
-  - title: REBOUND
-    url: https://rebound.hanno-rein.de/
-    desc: REBOUND is an N-body integrator, i.e. a software package that can integrate the motion of particles under the influence of gravity. 
-
-
-  - title: REBOUNDx
-    url: https://reboundx.readthedocs.io/en/latest/
-    desc: REBOUNDx (eXtras) allows you to easily incorporate additional physics into your REBOUND N-body integrations.
 
 
   - title: jaxoplanet
@@ -75,9 +77,17 @@ old_project_entries:
     url: https://github.com/t-brandt/orvara
     desc: A package for fitting orbits of bright stars and their faint companions (exoplanets, brown dwarfs, white dwarfs, and low-mass stars).
 
-  - title: ALLESFITTER
-    url: https://www.allesfitter.com/
-    desc: Allesfitter is a public and user-friendly astronomy software package for modeling photometric and RV data. It can accommodate multiple exoplanets, multi-star systems, star spots, stellar flares, and various noise models. 
+  - title: REBOUND
+    url: https://rebound.hanno-rein.de/
+    desc: REBOUND is an N-body integrator, i.e. a software package that can integrate the motion of particles under the influence of gravity. 
+
+
+  - title: REBOUNDx
+    url: https://reboundx.readthedocs.io/en/latest/
+    desc: REBOUNDx (eXtras) allows you to easily incorporate additional physics into your REBOUND N-body integrations.
+
+
+
 
 
 footer_entries:
