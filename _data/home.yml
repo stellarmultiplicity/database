@@ -11,7 +11,7 @@ project_entries:
     url: https://www.ctio.noirlab.edu/~atokovin/stars/
     desc: This is a catalog of hierarchical multiple stellar systems with three or more components. 
 
-  - title: WDC
+  - title: WDS
     url: https://www.astro.gsu.edu/wds/
     desc: The Washington Double Star Catalog (WDS) maintained by the United States Naval Observatory is the world's principal database of astrometric double and multiple star information.
 
