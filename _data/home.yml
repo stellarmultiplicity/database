@@ -5,36 +5,45 @@ navbar_entries:
   - title: post
     url: post
 
+  - title: codes
+    url: codes
+
 
 project_entries:
   - title: MSC
     url: https://www.ctio.noirlab.edu/~atokovin/stars/
     desc: This is a catalog of hierarchical multiple stellar systems with three or more components. 
+    highlight: STEL-ORB
 
   - title: WDS
     url: https://www.astro.gsu.edu/wds/
     desc: The Washington Double Star Catalog (WDS) maintained by the United States Naval Observatory is the world's principal database of astrometric double and multiple star information.
+    highlight: ORB
 
   - title: SBX
     url: https://www.astro.ulb.ac.be/sbx
     desc: SBX originated from the migration of the SB9 catalogue. It continues the series of compilations of spectroscopic orbits carried out over the past 35 years by Batten and collaborators.
+    highlight: ORB
 
   - title: DEBCat
     url: https://www.astro.keele.ac.uk/jkt/debcat/
     desc: DEBCat is a catalogue of the physical properties of well-studied detached eclipsing binaries. 
-    highlight: High-precision
+    highlight: STEL-ORB
 
   - title: PMTCat
     url: https://binary-observations.github.io/post_mt_catalog/
     desc: A collaborative project to catalog and analyze post-mass transfer binary systems.
+    highlight: STEL-ORB
 
   - title: KeplerEB
     url: https://keplerebs.villanova.edu/
     desc: Kepler Eclipsing Binaries Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Kepler mission.
+    highlight: ORB
 
   - title: TESSEB
     url: https://keplerebs.villanova.edu/
     desc: The TESS Eclipsing Binary Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Transiting Exoplanet Survey Satellite mission.
+      highlight: ORB
 
 old_project_entries:
 
