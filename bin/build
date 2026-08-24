@@ -3,4 +3,3 @@
 set -e
 
 JEKYLL_ENV=production bundle exec jekyll build "$@"
-FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true
