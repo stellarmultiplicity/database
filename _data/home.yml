@@ -15,9 +15,9 @@ project_entries:
     url: https://www.astro.gsu.edu/wds/
     desc: The Washington Double Star Catalog (WDS) maintained by the United States Naval Observatory is the world's principal database of astrometric double and multiple star information.
 
-  - title: SB9
-    url: https://heasarc.gsfc.nasa.gov/w3browse/all/sborbitcat.html
-    desc: The Ninth Catalog of Spectroscopic Binary Orbits (SB9) continues the series of compilations of spectroscopic orbits carried out over the past 35 years by Batten and collaborators.
+  - title: SBX
+    url: https://www.astro.ulb.ac.be/sbx
+    desc: SBX originated from the migration of the SB9 catalogue. It continues the series of compilations of spectroscopic orbits carried out over the past 35 years by Batten and collaborators.
 
   - title: DEBCat
     url: https://www.astro.keele.ac.uk/jkt/debcat/
