@@ -75,7 +75,7 @@ old_project_entries:
   - title: jaxoplanet
     url: https://jax.exoplanet.codes/en/latest/
     desc: jaxoplanet is a functional-programming-forward implementation of lightcurves, RVs, and relative astrometry of multi-exoplanet and star systems.
-      highlight: LC-RV-AS
+    highlight: LC-RV-AS
 
   - title: orbitize!
     url: https://orbitize.readthedocs.io/en/latest/
