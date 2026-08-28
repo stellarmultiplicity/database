@@ -5,8 +5,8 @@ navbar_entries:
   - title: post
     url: post
 
-  - title: codes
-    url: codes
+ # - title: codes
+ #   url: codes
 
 
 project_entries:
