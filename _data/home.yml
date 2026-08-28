@@ -43,7 +43,7 @@ project_entries:
   - title: TESSEB
     url: https://keplerebs.villanova.edu/
     desc: The TESS Eclipsing Binary Catalog is a comprehensive, growing database of eclipsing binary star systems identified by the Transiting Exoplanet Survey Satellite mission.
-      highlight: ORB
+    highlight: ORB
 
 old_project_entries:
 
