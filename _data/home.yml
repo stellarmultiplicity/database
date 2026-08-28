@@ -10,6 +10,8 @@ navbar_entries:
 
 
 project_entries:
+  - project_description: Catalogues with ORB contain orbital parameters and STEL contain stellar parameters.
+  
   - title: MSC
     url: https://www.ctio.noirlab.edu/~atokovin/stars/
     desc: This is a catalog of hierarchical multiple stellar systems with three or more components. 
@@ -46,6 +48,7 @@ project_entries:
     highlight: ORB
 
 old_project_entries:
+  - project_description: LC - light curve. RV - radial velocity. AS - astrometry. LPV - line profile variations. 
 
 #primary function: lightcurve model
   - title: PHOEBE2
