@@ -18,6 +18,7 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        # Added --trace to uncover the underlying compilation error
+        run: JEKYLL_ENV=production bundle exec jekyll build --trace
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
