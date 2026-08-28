@@ -21,3 +21,4 @@ jobs:
         run: JEKYLL_ENV=production bundle exec jekyll build
         env:
           JEKYLL_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
