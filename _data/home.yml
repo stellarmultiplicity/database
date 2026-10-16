@@ -9,7 +9,7 @@ navbar_entries:
  #   url: codes
 
 
-entries:
+project_entries:
 #  - project_description: Catalogues with ORB contain orbital parameters and STEL contain stellar parameters.
   
   - title: MSC
@@ -52,22 +52,22 @@ entries:
     desc: General Catalogue of Variable Stars (GCVS; Samus’ et al. 2017) catalogue stands as a long-standing compilation of variable stars, maintained on behalf of the International Astronomical Union since the 1940s. 
     highlight: ORB-STELL
 
-  - title: TESS OBAF-type Eclipsing Binaries catalogue
+  - title: TESS OBAF-type EBs
     url: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+A/691/A242
     desc: TESS OBAF-type Eclipsing Binaries catalogue (IJspeert et al. 2021, 2024) targets the intermediate- to high-mass regime that is under-represented in general-purpose compilation.
     highlight: ORB
 
-  - title: Gaia Catalogue of Eclipsing Binaries
+  - title: Gaia Catalogue of EBs
     url: https://cdn.gea.esac.esa.int/?prefix=Gaia/gdr3/Variability/vari_eclipsing_binary/
     desc: Gaia Catalogue of Eclipsing Binaries (Mowlavi et al. 2023) constitutes one of the largest sample of EBs that has ever been published to date, with 2,184,477 eclipsing binaries.
     highlight: ORB
 
-  - title: EROS Catalogue of Eclipsing Binary Stars
+  - title: EROS Catalogue of EBs
     url: https://cdsarc.cds.unistra.fr/viz-bin/cat/J/A+AS/109/447
     desc: EROS Catalogue of Eclipsing Binary Stars presents 79 certain or probable EBs located in the bar of LMC, produced from the Expérience de Recherches d’Objets Sombres (EROS) project’s 1991-92 season.
     highlight: ORB
 
-  - title: Catalogue of M&M Eclipsing Binaries with TESS
+  - title: Catalogue of M&M EBs with TESS
     url: https://iopscience.iop.org/article/10.3847/1538-4357/ae0c0f#apjae0c0ft1
     desc: Catalogue of M&M Eclipsing Binaries with TESS targets the low-mass end (Teff < 4200 K) of the EB population of 498 046 systems provided by Powell et al. (2021).
     highlight: ORB-STEL
