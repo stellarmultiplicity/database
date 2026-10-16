@@ -9,7 +9,7 @@ navbar_entries:
  #   url: codes
 
 
-project_entries:
+entries:
 #  - project_description: Catalogues with ORB contain orbital parameters and STEL contain stellar parameters.
   
   - title: MSC
